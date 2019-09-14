@@ -15,10 +15,17 @@ public:
     double x;
     double y;
     Vector2(double a = 0.0,double b = 0.0) :x(a),y(b) {}
-    
+
     Vector2 operator + (const Vector2 &A);
     Vector2 operator - (const Vector2 &A);
     Vector2 operator * (const int &A);
+    bool operator == (const Vector2 &A);
+    bool operator != (const Vector2 &A);
+    bool operator &= (const Vector2 &A);
+    bool operator < (const Vector2 &A);
+    bool operator > (const Vector2 &A);
+    bool operator <= (const Vector2 &A);
+    bool operator >= (const Vector2 &A);
     template<typename T> Vector2 operator * (const T &A);
     template<typename T> Vector2 operator / (const T &A);  
     double size();
@@ -41,7 +48,65 @@ Vector2 Vector2::operator - (const Vector2 &A){
     C.y=y-A.y;
     return C;
 }
-
+bool Vector2::operator==(const Vector2 &A){
+    if(x==A.x && y==A.y){
+        return true;
+    }else{
+        return false;
+    }
+}
+bool Vector2::operator!=(const Vector2 &A){
+    if(x==A.x && y==A.y){
+        return false;
+    }else{
+        return true;
+    }
+}
+bool Vector2::operator&=(const Vector2 &A){
+    double s = sqrt(A.x*A.x + A.y*A.y);
+    if (size()==s){
+        return true;
+    }else{
+        return false;
+    }
+    
+}
+bool Vector2::operator<(const Vector2 &A){
+    double s = sqrt(A.x*A.x + A.y*A.y);
+    if (size()<s){
+        return true;
+    }else{
+        return false;
+    }
+    
+}
+bool Vector2::operator>(const Vector2 &A){
+    double s = sqrt(A.x*A.x + A.y*A.y);
+    if (size()>s){
+        return true;
+    }else{
+        return false;
+    }
+    
+}
+bool Vector2::operator<=(const Vector2 &A){
+    double s = sqrt(A.x*A.x + A.y*A.y);
+    if (size()<=s){
+        return true;
+    }else{
+        return false;
+    }
+    
+}
+bool Vector2::operator>=(const Vector2 &A){
+    double s = sqrt(A.x*A.x + A.y*A.y);
+    if (size()>=s){
+        return true;
+    }else{
+        return false;
+    }
+    
+}
 template<typename T> Vector2 Vector2::operator*(const T &A){
     Vector2 C;
     C.x=A*x;
