@@ -12,5 +12,7 @@ int main(){
     cout<<Round(PI,2)<<endl;
     bool b = v.IsParallel(c);
     cout<<b<<endl;
+    Vector2 a(1,0),d(1,1.7320508);
+    cout<<a.Angle(d)*Rad2Deg<<endl;
     return 0;
 }

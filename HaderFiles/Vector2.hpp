@@ -33,6 +33,7 @@ public:
     bool IsVertical(Vector2 vector);
     bool IsParallel(Vector2 vector);
     Vector2 Unit();
+    double Angle(Vector2 A);
 };
 
 Vector2 Vector2::operator+(const Vector2 &A){
@@ -140,6 +141,12 @@ double Vector2::size(){
 Vector2 Vector2::Unit(){
     Vector2 v(x,y);
     return v/size();
+}
+double Vector2::Angle(Vector2 B){
+    Vector2 A(x,y);
+    double Pr = A.x*B.x+A.y*B.y;
+    double cos = Pr/(A.size()*B.size());
+    return acos(cos);
 }
 string Vector2::ToString(){
     string S;
