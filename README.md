@@ -20,6 +20,11 @@
 
     size() ... VectorSize
     ToString() ... Type "Vector2" to "string"
-    bool IsVertical(Vector2 v) ...
+    IsVertical(Vector2 v) ... Whether Two Vectors are Vertical or Not
+    IsParallel(Vector2 v) ... Whether Two Vectors are Parallel or Not
+    Unit() ... UnitVector
+    Angle(Vector2 v) ... Angle Formed by Two Vectors
+
+
 
 
