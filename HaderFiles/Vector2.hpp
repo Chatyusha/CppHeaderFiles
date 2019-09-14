@@ -128,7 +128,7 @@ bool Vector2::IsVertical(Vector2 vector){
     }
 }
 bool Vector2::IsParallel(Vector2 vector){
-    if(y/x==vector.y/vector.x){
+    if(y*vector.x-vector.y*x==0){
         return true;
     }else{
         return false;

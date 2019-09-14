@@ -7,10 +7,10 @@ using namespace std;
 using namespace Mathf;
 
 int main(){
-    Vector2 v(3,4),c(8,6);
+    Vector2 v(3,4),c(1.5,2);
     cout<<c.ToString()<<endl;
     cout<<Round(PI,2)<<endl;
-    bool b = c>=c;
+    bool b = v.IsParallel(c);
     cout<<b<<endl;
     return 0;
 }
