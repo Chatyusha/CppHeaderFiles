@@ -23,6 +23,7 @@
     IsVertical(Vector2 v) ... Whether Two Vectors are Vertical or Not
     IsParallel(Vector2 v) ... Whether Two Vectors are Parallel or Not
     Unit() ... UnitVector
+    OrthographicProjection(Vector2 A) ... Orthographic to VectorA
     Angle(Vector2 v) ... Angle Formed by Two Vectors
 
 
