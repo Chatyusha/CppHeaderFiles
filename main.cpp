@@ -14,5 +14,8 @@ int main(){
     cout<<b<<endl;
     Vector2 a(1,0),d(1,1.7320508);
     cout<<a.Angle(d)*Rad2Deg<<endl;
+    Vector2 X(3,4),A(1,0);
+    Vector2 C = X.OrthographicProjection(A);
+    cout<<C.ToString()<<endl;
     return 0;
 }

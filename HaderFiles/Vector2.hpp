@@ -33,7 +33,10 @@ public:
     bool IsVertical(Vector2 vector);
     bool IsParallel(Vector2 vector);
     Vector2 Unit();
+    Vector2 OrthographicProjection(Vector2 A);
     double Angle(Vector2 A);
+private :
+    double InnerMultiplication(Vector2 a);
 };
 
 Vector2 Vector2::operator+(const Vector2 &A){
@@ -142,6 +145,14 @@ Vector2 Vector2::Unit(){
     Vector2 v(x,y);
     return v/size();
 }
+Vector2 Vector2::OrthographicProjection(Vector2 A){
+    Vector2 X(x,y);
+    double k = X.InnerMultiplication(A);
+    double l = A.InnerMultiplication(A);
+    double m = k/l;
+    Vector2 R(m*A.x,m*A.y);
+    return R;
+}
 double Vector2::Angle(Vector2 B){
     Vector2 A(x,y);
     double Pr = A.x*B.x+A.y*B.y;
@@ -152,5 +163,8 @@ string Vector2::ToString(){
     string S;
     S="("+to_string(x)+", "+to_string(y)+")";
     return  S;
+}
+double Vector2::InnerMultiplication(Vector2 a){
+    return x*a.x+y*a.y;
 }
 #endif /* Vector2_hpp */
