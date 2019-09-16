@@ -1,6 +1,7 @@
 #ifndef Mathf_hpp
 #define Mathf_hpp
 #include <cmath>
+#define double long double
 namespace Mathf {
     const double PI = 3.14159274;
     const double E = 2.71828183;
@@ -32,6 +33,12 @@ namespace Mathf {
     }
     double Round(double x,int n){
         return round(x*TenPow(n))/TenPow(n);
+    }
+    double Log2(double a, double b){
+        return log(b)/log(a);
+    }
+    double log10(double x){
+        return Log2(10,x);
     }
 }
 

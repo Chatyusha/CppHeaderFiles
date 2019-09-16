@@ -17,5 +17,6 @@ int main(){
     Vector2 X(3,4),A(1,0);
     Vector2 C = X.OrthographicProjection(A);
     cout<<C.ToString()<<endl;
+    cout<<Log2(10,20)<<endl;
     return 0;
 }
