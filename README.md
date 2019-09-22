@@ -49,4 +49,7 @@
     Round(double x,int n) ... Round(double x,int n) ... Round X to N decimal places
     Log2(double a,double b) ... <p> this is *smaple*</p>
 
+    [tex: y=ax\^2+bx+c]
+
+
 
