@@ -36,5 +36,15 @@
     Deg2Rad ... Constant to convert Degrees to Radians
     Rad2Deg ... Constant to convert Radians to Degrees
 
+### Functions
+
+    deg_cos ... Cos(double Degrees)
+    deg_sin ... Sin(double Degrees)
+    deg_tan ... Tan(double Degrees)
+    deg_acos ... Returns the value of "acos" in degrees
+    deg_asin ... Returns the value of "asin" in degrees
+    deg_atan ... Returns the value of "atan" in degrees
+    deg_atan2 ... Returns the value of "atan2" in degrees
+
 
 
