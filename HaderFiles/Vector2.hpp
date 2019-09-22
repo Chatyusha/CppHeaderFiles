@@ -167,4 +167,5 @@ string Vector2::ToString(){
 double Vector2::InnerMultiplication(Vector2 a){
     return x*a.x+y*a.y;
 }
+
 #endif /* Vector2_hpp */

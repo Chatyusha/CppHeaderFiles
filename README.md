@@ -25,7 +25,7 @@
     Unit() ... UnitVector
     OrthographicProjection(Vector2 A) ... Orthographic to VectorA
     Angle(Vector2 v) ... Angle Formed by Two Vectors
-
+    OrthographicProjection(Vector2 A) ... Orthographically project this Vector2 to Vector2 A
 
 
 
