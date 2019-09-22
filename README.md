@@ -41,10 +41,12 @@
     deg_cos ... Cos(double Degrees)
     deg_sin ... Sin(double Degrees)
     deg_tan ... Tan(double Degrees)
-    deg_acos ... Returns the value of "acos" in degrees
+    deg_acos ... Returns the value of "acos" in Degrees
     deg_asin ... Returns the value of "asin" in degrees
     deg_atan ... Returns the value of "atan" in degrees
     deg_atan2 ... Returns the value of "atan2" in degrees
-
+    TenPow(int N) ... 10 to the power of N
+    Round(double x,int n) ... Round(double x,int n) ... Round X to N decimal places
+    Log2(double a,double b) ... [tex: \frac{a}{b} ]
 
 
