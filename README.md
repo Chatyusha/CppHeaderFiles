@@ -27,5 +27,14 @@
     Angle(Vector2 v) ... Angle Formed by Two Vectors
     OrthographicProjection(Vector2 A) ... Orthographically project this Vector2 to Vector2 A
 
+## Mathf
+
+### CostantNumber
+
+    PI ... pi
+    E ... Napier's constant
+    Deg2Rad ... Constant to convert Degrees to Radians
+    Rad2Deg ... Constant to convert Radians to Degrees
+
 
 
