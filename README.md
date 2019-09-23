@@ -46,6 +46,7 @@ deg_atan2 ... Returns the value of &quot;atan2&quot; in degrees
 TenPow(int N) ... 10 to the power of N ( 10<sup>n</sup> ) 
 Round(double x,int n) ... Round(double x,int n) ... Round X to N decimal places
 Log2(double a,double X) ... Logarithm with base "a" for "X" ( log<sub>a</sub>X )
+log10(double X) ... Logarithm with base 10 for "X" ( log<sub>10</sub>X )
 </code></pre>
 </body>
 </html>
