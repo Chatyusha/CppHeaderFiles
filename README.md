@@ -43,9 +43,9 @@ deg_acos ... Returns the value of &quot;acos&quot; in Degrees
 deg_asin ... Returns the value of &quot;asin&quot; in degrees
 deg_atan ... Returns the value of &quot;atan&quot; in degrees
 deg_atan2 ... Returns the value of &quot;atan2&quot; in degrees
-TenPow(int N) ... 10 to the power of N
+TenPow(int N) ... 10 to the power of N ( 10<sup>n</sup> ) 
 Round(double x,int n) ... Round(double x,int n) ... Round X to N decimal places
-Log2(double a,double b) ... log<sub>a</sub>b 
+Log2(double a,double X) ... Logarithm with base "a" for "X" ( log<sub>a</sub>X )
 </code></pre>
 </body>
 </html>
