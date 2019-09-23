@@ -47,9 +47,8 @@
     deg_atan2 ... Returns the value of "atan2" in degrees
     TenPow(int N) ... 10 to the power of N
     Round(double x,int n) ... Round(double x,int n) ... Round X to N decimal places
-    Log2(double a,double b) ... <p> this is *smaple*</p>
-
-    [tex: y=ax\^2+bx+c]
+    Log2(double a,double b) ... 
+    <img src="https://latex.codecogs.com/gif.latex?\frac{a}{b}" />
 
 
 
