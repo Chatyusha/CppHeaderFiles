@@ -48,7 +48,8 @@
     TenPow(int N) ... 10 to the power of N
     Round(double x,int n) ... Round(double x,int n) ... Round X to N decimal places
     Log2(double a,double b) ... 
-    <img src="https://latex.codecogs.com/gif.latex?\frac{a}{b}" />
+
+<img src="https://latex.codecogs.com/gif.latex?\frac{a}{b}" />
 
 
 
