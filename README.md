@@ -5,7 +5,7 @@
 <body>
 <h1 id="headerfilesc">HeaderFilesC++</h1>
 <h2 id="vector2">Vector2</h2>
-<h3 id="oprators">Oprators</h3>
+<h4 id="oprators">Oprators</h4>
 <pre><code>+  Addition ... Vector2 + Vector2 , 
 -  Subtraction ... Vector2 - Vector2 ,
 *  Multiplication ... Vector2 * Vector2 or Vector2 * ConstantNumber ,
