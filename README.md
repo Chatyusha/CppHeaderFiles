@@ -28,6 +28,13 @@ OrthographicProjection(Vector2 A) ... Orthographic to VectorA
 Angle(Vector2 v) ... Angle Formed by Two Vectors
 OrthographicProjection(Vector2 A) ... Orthographically project this Vector2 to Vector2 A
 </code></pre>
+<h3 id="namespaceconstant">NamespaceConstant</h2>
+<pre><code>
+Up ... Vector2(0,1)
+Down ... Vector2(0,-1)
+Right ... Vetor2(1,0)
+Left ... Vector2(-1,0)
+</code></pre>
 <h2 id="mathf">Mathf</h2>
 <h3 id="costantnumber">CostantNumber</h3>
 <pre><code>PI ... pi

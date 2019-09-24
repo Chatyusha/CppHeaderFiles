@@ -11,7 +11,6 @@ class Color{
         int r;
         int g;
         int b;
-        // Color(int r=0,int g=0,int b=0 ,int R[2] = Default) :r(r),g(g),b(b),R({R[0],R[1]}){}
         Color(){
             r=g=b=0;
             R[0]=R[1]=0;
