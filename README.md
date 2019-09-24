@@ -4,8 +4,8 @@
 </head>
 <body>
 <h1 id="headerfilesc">HeaderFilesC++</h1>
-<h2 id="vector">Vector</h2>
-<h3 id="vector2">Vector2></h3>
+<h2 id="namsapcevector">Namspace Vector</h2>
+<h3 id="classvector2">Class Vector2</h3>
 <h4 id="oprators">Oprators</h4>
 <pre><code>+  Addition ... Vector2 + Vector2 , 
 -  Subtraction ... Vector2 - Vector2 ,
@@ -19,7 +19,7 @@
 &lt;= Less than or Equal in Size ... Vector2 &lt;= Vector2 ,
 &gt;= Greater than or Equal in Size ... Vector2 &gt;= Vector2 
 </code></pre>
-<h3 id="functions">Functions</h3>
+<h4 id="functions">Functions</h4>
 <pre><code>size() ... VectorSize
 ToString() ... Type &quot;Vector2&quot; to &quot;string&quot;
 IsVertical(Vector2 v) ... Whether Two Vectors are Vertical or Not
