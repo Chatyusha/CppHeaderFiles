@@ -82,7 +82,14 @@ namespace Color{
     Color Color::operator+(const Color &A){
 
         int w = (wide+A.wide)/2;
-        Color C(r+A.r,g+A.g,b+A.b,w);
+        int c[3]={r+A.r,g+A.g,b+A.b};
+        for (int i = 0; i < 3; i++)
+        {
+            if(c[i]>255){
+                c[i]=255;
+            }
+        }
+        Color C(c[0],c[1],c[2],w);
         return C;
     }
     string Color::ToString(int status){
@@ -101,14 +108,23 @@ namespace Color{
     Color Red(int w=0);
     Color Green(int w=0);
     Color Blue(int w=0); 
+    Color Cyan(int w=0);
+    Color Yellow(int w=0);
+    Color Magenta(int w=0);
     Color Red(int w){
        return Color(255,0,0,w); 
     }
     Color Green(int w){
-        return Color (0,255,0,w);
+        return Color(0,255,0,w);
     }
     Color Blue(int w){
         return Color(0,0,255,w);
+    }
+    Color Cyan(int w){
+        return Color(0,255,255,w);
+    }
+    Color Yellow(int w){
+        return Color (255,255,0,w);
     }
 }
 #endif /*sColor_hpp*/
