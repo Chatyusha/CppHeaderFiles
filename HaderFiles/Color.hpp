@@ -32,32 +32,47 @@ namespace Color{
                 r=red;
                 g=green;
                 b=blue;
-                R[0]=red-w;
+                if(r>255){
+                    r=255;
+                }else if(r<0){
+                    r=0;
+                }
+                if(g>255){
+                    g=255;
+                }else if(g<0){
+                    g=0;
+                }
+                if(b>255){
+                    b=255;
+                }else if(b<0){
+                    b=0;
+                }
+                R[0]=r-w;
                 if (R[0]<0)
                 {
                     R[0]=0;
                 }
-                R[1]=red+w;
+                R[1]=r+w;
                 if (R[1]>255)
                 {
                     R[1]=255;
                 }
-                G[0]=green-w;
+                G[0]=g-w;
                 if (G[0]<0)
                 {
                     G[0]=0;
                 }
-                G[1]=green+w;
+                G[1]=g+w;
                 if (G[1]>255)
                 {
                     G[1]=255;
                 }
-                B[0]=blue-w;
+                B[0]=b-w;
                 if (B[0]<0)
                 {
                     B[0]=0;
                 }
-                B[1]=blue+w;
+                B[1]=b+w;
                 if (B[1]>255)
                 {
                     B[1]=255;
@@ -77,7 +92,7 @@ namespace Color{
                 wide = ((R[1]-R[0])/2+(G[1]-G[0])/2+(B[1]-B[0])/2)/3;
             }
             Color operator + (const Color &A);
-            Color operator * (double &k);
+            Color operator * (const double &k);
     };
     Color Color::operator+(const Color &A){
 
@@ -91,6 +106,9 @@ namespace Color{
         }
         Color C(c[0],c[1],c[2],w);
         return C;
+    }
+    Color Color::operator*(const double &k){
+        return Color(r*k,g*k,b*k,wide);
     }
     string Color::ToString(int status){
         if (status==COLOR_TYPE_0){
