@@ -29,7 +29,7 @@ OrthographicProjection(Vector2 A) ... Orthographic to VectorA
 Angle(Vector2 v) ... Angle Formed by Two Vectors
 OrthographicProjection(Vector2 A) ... Orthographically project this Vector2 to Vector2 A
 </code></pre>
-<h3 id="namespaceconstant">NamespaceConstant</h2>
+<h3 id="constant">Constant</h2>
 <pre><code>Up ... Vector2(0,1)
 Down ... Vector2(0,-1)
 Right ... Vetor2(1,0)
